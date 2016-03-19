@@ -1,0 +1,9 @@
+<div layout="column" class="bug-container">
+    <div flex="90">
+        <bug ng-repeat="bug in vm.bugs" type="{{bug.type}}"></bug>
+    </div>
+    <div flex="10" layout="row" layout-align="center center">
+        <md-button class="md-raised" ng-click="vm.addFly()">Add Fly</md-button>
+        <md-button class="md-raised" ng-click="vm.addSpider()">Add Spider</md-button>
+  </div>
+</div>

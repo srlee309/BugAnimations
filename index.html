@@ -1,0 +1,31 @@
+<html ng-app="Bugs">
+<head>
+    <title>Bugs</title>
+
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-animate.min.js"></script>
+    <script src="lib/angular/angular-aria.min.js"></script>
+    <script src="lib/velocity/velocity.min.js" type="text/javascript"></script>
+    <script src="lib/velocity/velocity.ui.js" type="text/javascript"></script>
+    <script src="lib/velocity/velocity-ui-angular.js" type="text/javascript"></script>
+    <script src="lib/angular-ui-router/angular-ui-router.min.js"></script>
+    <script src="lib/angular-material/angular-material.min.js"></script>
+    <link href="lib/angular-material/angular-material.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="styles/cssreset.css" rel="stylesheet" type="text/css"/>
+    <link href="styles/default.css" rel="stylesheet" type="text/css"/>
+
+    <script src="components/config/app.module.js"></script>
+    <script src="components/config/app.config.js"></script>
+    <script src="components/config/app.run.js"></script>
+    <script src="components/home/service/BugMovementService.js" type="text/javascript"></script>
+    <script src="components/home/service/UtilService.js" type="text/javascript"></script>
+    <script src="components/home/controller/BugCtrl.js"></script>
+    <script src="components/home/animation/moving-spider.js" type="text/javascript"></script>
+    <script src="components/home/animation/moving-fly.js" type="text/javascript"></script>
+    <script src="components/home/directive/bug.js" type="text/javascript"></script>
+</head>
+<body >
+    <div ui-view></div>
+</body>
+</html>

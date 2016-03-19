@@ -1,0 +1,69 @@
+body {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.spider
+{
+    position: absolute;
+
+    width: 69px;
+    height: 90px;
+    z-index: 99;
+
+    background: url('../images/spider-sprite.png') no-repeat transparent;
+}
+
+.fly
+{
+    position: absolute;
+
+    width: 13px;
+    height: 14px;
+    z-index: 99;
+
+    background: url('../images/fly-sprite.png') no-repeat transparent;
+}
+
+.moving-fly
+{
+    animation: run-fly .4s steps(5) infinite;
+}
+
+.moving-spider
+{
+    animation: run-spider .4s steps(7) infinite;
+}
+
+.bug-container
+{
+    background: url('../images/subtle_white_mini_waves.png');
+
+}
+
+@keyframes run-fly
+{
+    from
+    {
+        background-position-x: 0;
+    }
+    to
+    {
+        background-position-x: -65px;
+    }
+}
+
+@keyframes run-spider
+{
+    from
+    {
+        background-position-x: 0;
+    }
+    to
+    {
+        background-position-x: -483px;
+    }
+}
